@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #FFF;
+}
+
+.main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: #252525;
+    margin-bottom: 20px;
+    width: 515px;
+    height: 65px;
+    position: relative;
+}
+
+img {
+    transform: scaleX(-1);
+    height: 60px;
+    width: auto;
+    position: absolute;
+    top: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0% { 
+        transform: translateX(0px) scaleX(-1);
+    }
+    100% { 
+        transform: translateX(400px) scaleX(-1);
+    }
+}
+
+.linear {
+    animation: slide 4s linear forwards;
+}
+
+.ease {
+    animation: slide 4s ease forwards;
+}
+
+.ease-in {
+    animation: slide 4s ease-in forwards;
+}
+
+.ease-in-out {
+    animation: slide 4s ease-in-out forwards;
+}
+
+.ease-out {
+    animation: slide 4s ease-out forwards;
+}
+
+.steps {
+    animation: slide 4s steps(20) forwards;
+}
+
+.cubic-bezier {
+    animation: slide 4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* @keyframes rotateAndMove {
+    0% {
+      transform: translateX(0) rotate(-7deg) scaleX(-1);
+    }
+    12.5% {
+      transform: translateX(50px) rotate(5deg) scaleX(-1);
+    }
+    25% {
+      transform: translateX(100px) rotate(-7deg) scaleX(-1);
+    }
+    37.5% {
+      transform: translateX(150px) rotate(5deg) scaleX(-1);
+      }
+    50% {
+      transform: translateX(200px) rotate(-7deg) scaleX(-1);
+    }
+    62.5% {
+      transform: translateX(250px) rotate(5deg) scaleX(-1);
+      }
+    75% {
+      transform: translateX(300px) rotate(-7deg) scaleX(-1);
+    }
+    87.5% {
+      transform: translateX(350px) rotate(5deg) scaleX(-1);
+      }
+    100% {
+      transform: translateX(400px) rotate(0deg) scaleX(-1);
+    }
+}
+  
+.animated-image {
+    animation: rotateAndMove 4s linear forwards;
+} */
